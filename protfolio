@@ -1,0 +1,99 @@
+import React from "react";
+import { motion } from "framer-motion";
+
+export default function Portfolio() {
+  return (
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className="min-h-screen bg-gray-50 text-gray-900 p-6">
+      {/* Header */}
+      <header className="max-w-5xl mx-auto py-10 text-center">
+        <h1 className="text-4xl font-bold">Kavya Sree – UI/UX Designer</h1>
+        <p className="text-lg mt-3 text-gray-600">
+          Crafting clean, meaningful & user‑friendly digital experiences.
+        </p>
+      </header>
+
+      {/* About Section */}
+      <section className="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow mb-10">
+        <h2 className="text-2xl font-semibold mb-4">About Me</h2>
+        <p className="leading-relaxed text-gray-700">
+          Hi, I'm <b>Kavya Sree</b>, a passionate UI/UX Designer with strong skills in
+          Figma, prototyping, research, and visual design. I love transforming
+          ideas into clean and modern user interfaces that solve real problems.
+          I'm currently exploring design systems and UX case studies to improve
+          my craft.
+        </p>
+      </section>
+
+      {/* Skills */}
+      <section className="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow mb-10">
+        <h2 className="text-2xl font-semibold mb-4">Skills</h2>
+        <ul className="grid grid-cols-2 gap-3 text-gray-700">
+          <li>Figma</li>
+          <li>Wireframing & Prototyping</li>
+          <li>User Research</li>
+          <li>Mobile App Design</li>
+          <li>Web UI Design</li>
+          <li>Design Systems</li>
+        </ul>
+      </section>
+
+      {/* Projects Section */}
+      <section className="max-w-5xl mx-auto mb-10">
+        <h2 className="text-3xl font-semibold mb-6 text-center">Projects</h2>
+
+        {/* Project 1 */}
+        <div className="bg-white p-8 rounded-2xl shadow mb-8">
+          <h3 className="text-2xl font-semibold mb-3">Task Tracking App</h3>
+          <p className="text-gray-700 mb-4">
+            A mobile app designed to help users track tasks, manage deadlines
+            and keep their day organized.
+          </p>
+          <img
+            src="https://via.placeholder.com/900x500"
+            alt="Task Tracking App"
+            className="rounded-xl shadow"
+          />
+        </div>
+
+        {/* Project 2 */}
+        <div className="bg-white p-8 rounded-2xl shadow mb-8">
+          <h3 className="text-2xl font-semibold mb-3">Dog Walker App – Calendar UI</h3>
+          <p className="text-gray-700 mb-4">
+            Designed an interactive booking calendar that allows users to easily
+            schedule pet-walking sessions.
+          </p>
+          <img
+            src="https://via.placeholder.com/900x500"
+            alt="Dog Walker Calendar"
+            className="rounded-xl shadow"
+          />
+        </div>
+
+        {/* Project 3 */}
+        <div className="bg-white p-8 rounded-2xl shadow">
+          <h3 className="text-2xl font-semibold mb-3">Cancer Caregiver Creative</h3>
+          <p className="text-gray-700 mb-4">
+            A meaningful awareness design created for a caregiver organization,
+            combining realistic imagery and strong emotional messaging.
+          </p>
+          <img
+            src="https://via.placeholder.com/900x500"
+            alt="Cancer Awareness Creative"
+            className="rounded-xl shadow"
+          />
+        </div>
+      </section>
+
+      {/* Contact */}
+      <footer className="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow text-center">
+        <h2 className="text-2xl font-semibold mb-3">Contact</h2>
+        <p className="text-gray-700">Email: kavyapalacharla09@gmail.com</p>
+        <p className="text-gray-500 mt-2 text-sm">
+          Phone: 7013686577
+          <br/>
+          Replace with your social links.
+        </p>
+      </footer>
+    </motion.div>
+  );
+}
